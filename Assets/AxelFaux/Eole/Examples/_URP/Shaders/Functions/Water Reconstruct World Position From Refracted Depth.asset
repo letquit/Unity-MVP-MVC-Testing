@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Water Reconstruct World Position From Refracted Depth
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity
+    Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=18935\n-7;1;1920;1019;3681.575;231.3879;1;True;False\nNode;AmplifyShaderEditor.ScaleAndOffsetNode;1;-1846.355,71.69769;Inherit;False;3;0;FLOAT3;0,0,0;False;1;FLOAT;2;False;2;FLOAT;-1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;21;-896.4861,260.3284;Inherit;False;float3
+    result = In@$#if !defined(ASE_SRP_VERSION) || ASE_SRP_VERSION <= 70301 || ASE_SRP_VERSION
+    == 70503 || ASE_SRP_VERSION == 70600 || ASE_SRP_VERSION == 70700 || ASE_SRP_VERSION
+    == 70701 || ASE_SRP_VERSION >= 80301$result *= float3(1,1,-1)@$#endif$return
+    result@;3;Create;1;True;In;FLOAT3;0,0,0;In;;Inherit;False;InvertDepthDirHD;True;False;0;;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;20;-834.9865,135.8283;Inherit;False;float3
+    result = In@$#if !defined(ASE_SRP_VERSION) || ASE_SRP_VERSION <= 70301 || ASE_SRP_VERSION
+    == 70503 || ASE_SRP_VERSION == 70600 || ASE_SRP_VERSION == 70700 || ASE_SRP_VERSION
+    == 70701 || ASE_SRP_VERSION >= 80301$result *= float3(1,1,-1)@$#endif$return
+    result@;3;Create;1;True;In;FLOAT3;0,0,0;In;;Inherit;False;InvertDepthDirURP;True;False;0;;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;19;-355.4059,40.90101;Inherit;False;FLOAT4;4;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;1;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;18;-1046.356,23.6977;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CameraProjectionNode;17;-1734.355,-24.30232;Inherit;False;unity_CameraInvProjection;0;1;FLOAT4x4;0\nNode;AmplifyShaderEditor.FunctionNode;16;-2646.354,71.69769;Inherit;False;Non
+    Stereo Screen Pos;-1;;3;1731ee083b93c104880efc701e11b49b;0;1;23;FLOAT4;0,0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;15;-2342.354,71.69769;Inherit;False;FLOAT2;1;0;FLOAT2;0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.CameraToWorldMatrix;14;-419.4059,-39.09913;Inherit;False;0;1;FLOAT4x4;0\nNode;AmplifyShaderEditor.ScreenPosInputsNode;11;-3233.354,151.6977;Inherit;False;0;False;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;13;-195.406,-7.098995;Inherit;False;2;2;0;FLOAT4x4;0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1;False;1;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.DynamicAppendNode;10;-1622.355,71.69769;Inherit;False;FLOAT4;4;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;1;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.ComponentMaskNode;9;-1286.356,87.69769;Inherit;False;False;False;False;True;1;0;FLOAT4;0,0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;8;-2006.354,71.69769;Inherit;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StaticSwitch;7;-2278.354,247.6978;Float;False;Property;_Keyword0;Keyword
+    0;3;0;Fetch;True;0;0;0;False;0;False;0;0;0;False;UNITY_REVERSED_Z;Toggle;2;Key0;Key1;Fetch;False;True;All;9;1;FLOAT;0;False;0;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;6;-1446.356,39.6977;Inherit;False;2;2;0;FLOAT4x4;0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1;False;1;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.ComponentMaskNode;5;-1286.356,-24.30232;Inherit;False;True;True;True;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionSwitchByPipeline;4;-615.4861,39.32832;Inherit;False;4;0;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;3;-888.3555,-21.30231;Inherit;False;float3
+    result = In@$#if !defined(ASE_SRP_VERSION) || ASE_SRP_VERSION <= 70301$result
+    *= float3(1,1,-1)@$#endif$return result@;3;Create;1;True;In;FLOAT3;0,0,0;In;;Inherit;False;InvertDepthDir;True;False;0;;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.ScreenDepthNode;2;-2646.354,247.6978;Inherit;False;1;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.OneMinusNode;12;-2438.354,311.6976;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;22;-2976.575,153.6121;Inherit;False;Refract
+    UV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;0,0;Inherit;False;True;-1;XYWZ;0;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nWireConnection;1;0;8;0\nWireConnection;21;0;18;0\nWireConnection;20;0;18;0\nWireConnection;19;0;4;0\nWireConnection;18;0;5;0\nWireConnection;18;1;9;0\nWireConnection;16;23;22;0\nWireConnection;15;0;16;0\nWireConnection;13;0;14;0\nWireConnection;13;1;19;0\nWireConnection;10;0;1;0\nWireConnection;9;0;6;0\nWireConnection;8;0;15;0\nWireConnection;8;1;15;1\nWireConnection;8;2;7;0\nWireConnection;7;1;2;0\nWireConnection;7;0;12;0\nWireConnection;6;0;17;0\nWireConnection;6;1;10;0\nWireConnection;5;0;6;0\nWireConnection;4;0;3;0\nWireConnection;4;3;3;0\nWireConnection;4;1;20;0\nWireConnection;4;2;21;0\nWireConnection;3;0;18;0\nWireConnection;2;0;22;0\nWireConnection;12;0;2;0\nWireConnection;22;0;11;0\nWireConnection;0;0;13;0\nASEEND*/\n//CHKSM=DCBFE0D6B423F7B64DEB89F2E1E6A8B855FCCFD2"
+  m_functionName: 
+  m_description: 'This is a custom function, copied from Reconstruct World Position
+    From Depth (Amplify Shader Function).
+
+    Input refracted UVs.
+
+
+    Reconstructs
+    world position from the refracted depth of the scene. If depth is unconnected
+    a default screen depth will be calculated. For best results, zwrite should be
+    OFF and ztest should be ALWAYS.'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 9
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

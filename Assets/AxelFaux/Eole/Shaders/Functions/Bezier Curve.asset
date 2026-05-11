@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Bezier Curve
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.1.6\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19106\nNode;AmplifyShaderEditor.FunctionSubtitle;16;-112,-128;Inherit;False;Quadratic;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;14;-784,-160;Inherit;False;p2;3;1;False;1;0;FLOAT3;0,1,1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionSubtitle;20;-96,16;Inherit;False;Quintic;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionSubtitle;17;-128,-256;Inherit;False;Trigonometric;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;6;-784,112;Inherit;False;t;1;4;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;18;-784,16;Inherit;False;p4;3;3;False;1;0;FLOAT3;0,0,1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;13;-784,-80;Inherit;False;p3;3;2;False;1;0;FLOAT3;0,0,1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionSwitch;7;144,-160;Inherit;False;Bezier
+    Option;False;0;3;-1;Trigonometric;Quadratic;Quintic;Object;-1;10;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;519.9528,-155.222;Inherit;False;True;-1;XYZ;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;15;-784,-256;Inherit;False;p1;3;0;False;1;0;FLOAT3;0,1,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;11;-425,-622;Inherit;False;float3
+    p0 = float3(0, 0, 0)@$float3 p1@$float3 p2@$$float u = 1 - t@$float t2 = t *
+    t@$float u2 = u * u@$$float3 result =$\t(u2)*p0 +$\t(2 * u * t) * p1 +$\tt2 *
+    p2@$$return result@;3;Create;3;True;p1;FLOAT3;0,1,0;In;;Inherit;False;False;p2;FLOAT3;0,1,1;In;;Inherit;False;True;t;FLOAT;1;In;;Inherit;False;TrigonometricBezierCurve_fromfile;True;False;0;73d4a09b7ea44fa40b9bfeb2c6a247e1;False;3;0;FLOAT3;0,1,0;False;1;FLOAT3;0,1,1;False;2;FLOAT;1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;5;-625,-636;Inherit;False;
+    ;3;File;4;True;p1;FLOAT3;0,1,0;In;;Inherit;False;False;p2;FLOAT3;0,1,1;In;;Inherit;False;False;p3;FLOAT3;0,0,1;In;;Inherit;False;True;t;FLOAT;1;In;;Inherit;False;QuadraticBezierCurve;False;False;0;73d4a09b7ea44fa40b9bfeb2c6a247e1;False;4;0;FLOAT3;0,1,0;False;1;FLOAT3;0,1,1;False;2;FLOAT3;0,0,1;False;3;FLOAT;1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;19;-808,-649;Inherit;False;
+    ;3;File;5;False;p1;FLOAT3;0,1,0;In;;Inherit;False;False;p2;FLOAT3;0,1,1;In;;Inherit;False;False;p3;FLOAT3;0,0,1;In;;Inherit;False;False;p4;FLOAT3;0,1,1.5;In;;Inherit;False;True;t;FLOAT;1;In;;Inherit;False;QuinticBezierCurve;False;False;0;73d4a09b7ea44fa40b9bfeb2c6a247e1;False;5;0;FLOAT3;0,1,0;False;1;FLOAT3;0,1,1;False;2;FLOAT3;0,0,1;False;3;FLOAT3;0,1,1.5;False;4;FLOAT;1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;23;-400,-128;Inherit;False;float3
+    p0 = float3(0, 0, 0)@$$float u = 1 - t@$float t2 = t * t@$float u2 = u * u@$float
+    u3 = u2 * u@$float t3 = t2 * t@$$float3 result =$\t(u3)*p0 +$\t(3 * u2 * t) *
+    p1 +$\t(3 * u * t2) * p2 +$\t(t3)*p3@$$return result;3;Create;4;True;p1;FLOAT3;0,0,0;In;;Inherit;False;True;p2;FLOAT3;0,0,0;In;;Inherit;False;True;p3;FLOAT3;0,0,0;In;;Inherit;False;True;t;FLOAT;0;In;;Inherit;False;QuadraticBezierCurve;False;False;0;;False;4;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;24;-400,16;Inherit;False;float3
+    p0 = float3(0, 0, 0)@$$float u = 1 - t@$float t2 = t * t@$float u2 = u * u@$float
+    u3 = u2 * u@$float t3 = t2 * t@$float u4 = u3 * u@$float t4 = t3 * t@$$float3
+    result =$\t(u4)*p0 +$\t(4 * u3 * t) * p1 +$\t(4 * u2 * t2) * p2 +$\t(4 * u *
+    t3) * p3 +$\t(t4)*p4@$$return result@;3;Create;5;False;p1;FLOAT3;0,0,0;In;;Inherit;False;False;p2;FLOAT3;0,0,0;In;;Inherit;False;False;p3;FLOAT3;0,0,0;In;;Inherit;False;True;p4;FLOAT3;0,0,0;In;;Inherit;False;True;t;FLOAT;0;In;;Inherit;False;QuadraticBezierCurve;False;False;0;;False;5;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;21;-416,-256;Inherit;False;float3
+    p0 = float3(0, 0, 0)@$$float u = 1 - t@$float t2 = t * t@$float u2 = u * u@$$float3
+    result =$\t(u2)*p0 +$\t(2 * u * t) * p1 +$\tt2 * p2@$$return result@;3;Create;3;True;p1;FLOAT3;0,0,0;In;;Inherit;False;True;p2;FLOAT3;0,0,0;In;;Inherit;False;True;t;FLOAT;0;In;;Inherit;False;TrigonometricBezierCurve;False;False;0;;False;3;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;1;FLOAT3;0\nWireConnection;16;0;23;0\nWireConnection;20;0;24;0\nWireConnection;17;0;21;0\nWireConnection;7;0;17;0\nWireConnection;7;1;16;0\nWireConnection;7;2;20;0\nWireConnection;0;0;7;0\nWireConnection;23;0;15;0\nWireConnection;23;1;14;0\nWireConnection;23;2;13;0\nWireConnection;23;3;6;0\nWireConnection;24;0;15;0\nWireConnection;24;1;14;0\nWireConnection;24;2;13;0\nWireConnection;24;3;18;0\nWireConnection;24;4;6;0\nWireConnection;21;0;15;0\nWireConnection;21;1;14;0\nWireConnection;21;2;6;0\nASEEND*/\n//CHKSM=73F1904BD67E448082E4388C333536C36A030018"
+  m_functionName: 
+  m_description: 'Return the XYZ position on the Bezier curve.
+
+    ''p0'' is the
+    start point at (0,0,0).'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: Eole
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

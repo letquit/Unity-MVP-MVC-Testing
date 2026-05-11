@@ -1,0 +1,418 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BIRP_M_PampaGrassTess_02
+  m_Shader: {fileID: 4800000, guid: ab5c9f8eb0f4dda4da78ab0f444f90b6, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _DEBUGDISABLEWINDDPO_ON
+  - _DEBUGWIND_ON
+  - _USEAIRSHEENTINT_ON
+  - _USECOLORMAP_ON
+  - _USECRUSH_ON
+  - _USETRANSLUCENCY_ON
+  - _WIND_ADVANCED
+  m_InvalidKeywords:
+  - _USEAIRTINT_ON
+  - _USEDEBUGWIND_ON
+  - _USETERRAINBLENDING_ON
+  - _USETERRAINTEXCOLOR_ON
+  - _USEWINDTINT_ON
+  - _USEWIND_ON
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 762e869ef4e107e4fb64d2f6a4e1738f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CrushRenderTexture:
+        m_Texture: {fileID: 8400000, guid: d6d970a998063144aba4c205990882e8, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CrushRenderTextured:
+        m_Texture: {fileID: 8400000, guid: d6d970a998063144aba4c205990882e8, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DepthRepulseRT:
+        m_Texture: {fileID: 8400000, guid: d6d970a998063144aba4c205990882e8, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DepthRepulseRT1:
+        m_Texture: {fileID: 8400000, guid: d6d970a998063144aba4c205990882e8, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _IDNoiseVariation:
+        m_Texture: {fileID: 2800000, guid: 7e939d9df8348aa48b27ecd9f12579f4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _IDVariation:
+        m_Texture: {fileID: 2800000, guid: a6054a04c9cb3754f8fbe4ef1549b66c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 2800000, guid: 536fa316e6ed4f542909896fae3aceef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ORD:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RefractionNormal:
+        m_Texture: {fileID: 2800000, guid: 143815f6337e3db448ae3acd01c63283, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_217d5f6b5f4249c28119d8875babfe6f_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 536fa316e6ed4f542909896fae3aceef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainTexture:
+        m_Texture: {fileID: 2800000, guid: 51c6c79e4df4d8744bbaaed643bc1985, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: a6054a04c9cb3754f8fbe4ef1549b66c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample1:
+        m_Texture: {fileID: 2800000, guid: 51c6c79e4df4d8744bbaaed643bc1985, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WindColorNoiseTex:
+        m_Texture: {fileID: 2800000, guid: 7e939d9df8348aa48b27ecd9f12579f4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WindColorRefractionNormal:
+        m_Texture: {fileID: 2800000, guid: 143815f6337e3db448ae3acd01c63283, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WindMap:
+        m_Texture: {fileID: 2800000, guid: a6054a04c9cb3754f8fbe4ef1549b66c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WindNoise:
+        m_Texture: {fileID: 2800000, guid: 7e939d9df8348aa48b27ecd9f12579f4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - AirSpeed: -3
+    - _AMPLITUDE: 1
+    - _AlphaCutoff: 0.5
+    - _AlphaThreshold: 0.8
+    - _AmbiantOcclusion: 0.8
+    - _BendFactor: 0.335
+    - _BezierAlpha: 1
+    - _BezierBendFactor: 1
+    - _BezierGravityMultiplier: 1
+    - _BezierOffsetAlpha: 1
+    - _BlendFadeContrastMain: 0
+    - _BlendOffsetMain: 0.3
+    - _Brightness: 1.42
+    - _BrightnessHeightContrast: 1
+    - _BrightnessHeightThreshold: 1
+    - _BrightnessLowHeight: 0.5
+    - _BrightnessMaxSmoothstepMain: 1
+    - _BrightnessMaxSmoothstepVariant: 0
+    - _BrightnessMinSmoothstepMain: -0.3
+    - _BrightnessMinSmoothstepVariant: -1
+    - _CRUSHOFFSETDIST: -0.3
+    - _CamProjectionOffset: 25
+    - _CamProjectionSize: 60
+    - _ColorMapBlendOffset: 0
+    - _ColorMapFadeContrast: 0
+    - _ColormapBlendOffset: 0.42
+    - _ColormapFadeContrast: 0
+    - _CrushAO: 0
+    - _CrushAmplitude: 1
+    - _CrushAngle: 90
+    - _CrushBrightness: 0.5
+    - _CrushBrightnessMain: 0.8
+    - _CrushBrightnessVariant: 0.8
+    - _CrushDistanceThreshold: 0
+    - _CrushFlattenScale: 0
+    - _CrushHeightOffset: 0
+    - _CrushMaskContrast: 1
+    - _CrushOverrideBezier: 0.5
+    - _CrushOverride_NoWind: 1
+    - _CrushOverride_Windy: 0.5
+    - _CrushPersistence: 5
+    - _Crush_MaxAO: 0.5
+    - _CrushedContrastAO: 1
+    - _CurshAO: 0.2
+    - _CustomWindNoiseScale: 31.5
+    - _CustomWindNoiseSmoothstepMax: 1.2
+    - _CustomWindNoiseSmoothstepMin: -0.3
+    - _CustomWindOffsetSpeed: 4.88
+    - _DISPOLAAAACE: 0.77
+    - _DebugDisableWindDPO: 1
+    - _DebugWind: 1
+    - _DefaultBendFactor: 0.3
+    - _Displacement: 1
+    - _ENABLE: 0
+    - _EnvironmentReflections: 1
+    - _FaceWindDir_BendUp: 0
+    - _FaceWindDir_MaskFalloff: 1.5
+    - _FaceWindDir_MaskOffset: 0
+    - _FaceWindDir_Offset: -0.5
+    - _FaceWindDir_YOffset: -0.5
+    - _FadeHeightThreshold: 4.56
+    - _Falloff: 1.5
+    - _FlattenNormal: 1
+    - _FlattenVertexNormal: 1
+    - _Flexibility: 0.3
+    - _Float1: 1e+10
+    - _Float3: 30
+    - _Float4: 20
+    - _Float5: 1
+    - _GravityDirection: 0
+    - _GravityMultiplier: 1
+    - _HeightBrightness: 1
+    - _HeightBrightnessContrast: 0
+    - _HeightBrightnessHigh: 1.2
+    - _HeightBrightnessHighMain: 1
+    - _HeightBrightnessHighVariant: 1
+    - _HeightBrightnessLow: 0.3
+    - _HeightBrightnessLowMain: 0
+    - _HeightBrightnessLowVariant: 0.5
+    - _HeightBrightnessMaxMax: 1
+    - _HeightBrightnessMaxVariant: 1
+    - _HeightBrightnessMinMain: -1
+    - _HeightBrightnessMinVariant: -1
+    - _HeightBrightnessThreshold: 0.65
+    - _HeightBrightnessThresholdMain: 1
+    - _HeightBrightnessThresholdVariant: 0.5
+    - _IDInvertMask: 1
+    - _IDOffset: 0
+    - _IDScale: 23.5
+    - _IDSteps: 0.724
+    - _Keyword0: 1
+    - _MainBlendFadeContrast: 0
+    - _MainBlendOffset: 0.2
+    - _MaskBendPower: 0.23
+    - _MaxBrightness: 1
+    - _MaxBrightnessMain: 1
+    - _MaxBrightnessThreshold: 1.2
+    - _MaxHeightBrightness: 0.5
+    - _MaxHeightThreshold: 3.93
+    - _MinBrightness: 0.5
+    - _MinBrightnessMain: 1
+    - _MinBrightnessThreshold: -0.2
+    - _MinBrightnessVariant: 0.8
+    - _MinBrightnessVariant1: 1
+    - _MinHeightThreshold: 1.33
+    - _NOISESCALE: 0.24
+    - _NOISESPEED: -3
+    - _NoiseSCALE: 5
+    - _NoiseSTRENGTH: 0.15
+    - _NoiseScale: 0.1
+    - _NoiseScaleX: 20
+    - _NormalFlatness: 0
+    - _NormalStrength: 1
+    - _OPFFSET: 0
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _REFRACTION: 1
+    - _REFRACTIONSCALE: 30
+    - _ReceiveShadows: 1
+    - _RepulseAmplitude: 1
+    - _RepulseMaskContrast: 1
+    - _Rotation: -0.1
+    - _SimpleWindDisplacement: 1
+    - _SimpleWindyYOffset: -0.5
+    - _Smoothness: 0
+    - _SpecularHighlights: 1
+    - _THRESHOLDTILLING: 0.91
+    - _TerrainTexOffsetX: 20
+    - _TerrainTexOffsetY: 20
+    - _TerrainTexSize: 30
+    - _TerrainTexTilling: 30
+    - _TessMax: 30
+    - _TessMin: 20
+    - _TessValue: 3
+    - _TintBlend: 0.2
+    - _TintBlendMain: 1
+    - _TintBlendVariant: 0.304
+    - _TintFade: 1
+    - _TintFadeMain: 1.37
+    - _TintFadeVariant: 0
+    - _TransAmbient: 0.052
+    - _TransDirect: 1
+    - _TransNormal: 1
+    - _TransScattering: 1
+    - _TransShadow: 1
+    - _TransStrength: 14.2
+    - _TranslucencyDirect: 2.5
+    - _TranslucencyDotViewPower: 85
+    - _TranslucencyShadows: 5
+    - _TurbulenceAcceleration: 0
+    - _TurbulenceAmplitude: 0.05
+    - _TurbulenceDisplacement: 0.03
+    - _TurbulenceFrequency: 0.2
+    - _TurbulenceMaskScale: 1
+    - _TurbulenceMaskSpeed: -4
+    - _TurbulenceMaskSpeedMultiplier: 0.31
+    - _TurbulenceMax: 1
+    - _TurbulenceNoiseScale: 2
+    - _TurbulenceNoiseScale1: 1
+    - _TurbulenceSmoothstepMax: 1
+    - _TurbulenceSpeed: 1
+    - _TurbulenceThreshold: 0
+    - _TurbulenceThresholdMax: 1
+    - _TurbulenceThresholdMin: 0
+    - _TurbulenceWaveMultiplier: 10
+    - _TurbulenceWaveScale: 0.6
+    - _TurbulenceWaveSpeed: -3
+    - _TurbulenceWindThreshold: 0.5
+    - _UseAirSheenTint: 1
+    - _UseAirTint: 1
+    - _UseColormap: 1
+    - _UseCrush: 1
+    - _UseCustomWind: 0
+    - _UseCustomWind2: 0
+    - _UseDebugWind: 1
+    - _UseLinearColorSpace: 0
+    - _UseTerrainBlending: 1
+    - _UseTerrainTexColor: 1
+    - _UseTranslucency: 1
+    - _UseTreeBend: 0
+    - _UseVariant: 0
+    - _UseWind: 1
+    - _UseWindTint: 1
+    - _VariantBlendFadeContrast: 1
+    - _VariantBlendOffset: 1
+    - _VariantContrast: 1
+    - _VariantFalloff: 1
+    - _VariantHeightContrast: 1
+    - _VariantHeightThreshold: 5
+    - _VariantOffset: 0
+    - _Wind: 2
+    - _WindAngle: 0
+    - _WindAngleAmplitude: 1
+    - _WindAngleDEBUG: 0
+    - _WindBezierAlpha: 1
+    - _WindBrightness: 1
+    - _WindBrightnessAlpha: 0.1
+    - _WindBrightnessContrastMain: 0.5
+    - _WindBrightnessContrastVariant: 1
+    - _WindBrightnessOffset: -0.25
+    - _WindBrightnessOffsetMain: -0.5
+    - _WindBrightnessOffsetVariant: 0
+    - _WindColorRefraction: 30
+    - _WindColorRefractionStrength: 1
+    - _WindColorSpeed: -3
+    - _WindColorStrength: 0.15
+    - _WindNoiseScale: 0.2
+    - _WindSpeed: 3
+    - _Wind_Simple: 1
+    - _Windyp1YOffset: 0
+    - _Windyp1ZOffset: 0
+    - _Windyp2YOffset: -0.1
+    - _Windyp2ZOffset: 0.1
+    - _Yofffsetcrushbaked: -0.9
+    - _gdg: 100
+    m_Colors:
+    - _BezierOffsetP1: {r: 0.25, g: -0.25, b: NaN, a: NaN}
+    - _BezierOffsetP2: {r: 0.5, g: 0, b: NaN, a: NaN}
+    - _BezierP1: {r: -0.2, g: 0, b: NaN, a: NaN}
+    - _BezierP2: {r: 0.25, g: 0, b: NaN, a: NaN}
+    - _BezierPos1: {r: 0, g: 0, b: 0.1, a: 0}
+    - _BezierPos1Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _BezierPos2: {r: 0, g: 0, b: 0.36, a: 0}
+    - _BezierPos2Offset: {r: 0, g: -0.8, b: 0.5, a: 0}
+    - _BezierWindyPos1Offset: {r: 0, g: -0.2, b: -0.2, a: 0}
+    - _BezierWindyPos1Offset1: {r: 0, g: 0, b: 0, a: 0}
+    - _BezierWindyPos2Offset: {r: 0, g: -0.05, b: 0.5, a: 0}
+    - _BottomTint: {r: 0.075714186, g: 0.3773585, b: 0, a: 0}
+    - _Color0: {r: 0.6981132, g: 0.32566094, b: 0, a: 0}
+    - _CrushMaskSmoothstep: {r: 0.51, g: 0.91, b: 0, a: 0}
+    - _CrushVertexOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _CrushVertexRescale: {r: 1, g: 1, b: 1, a: 0}
+    - _CrushedMask_AOSmoothstep: {r: 1, g: 0, b: 0, a: 0}
+    - _CustomWindDirection: {r: 0.5, g: 0, b: 0.5, a: 0}
+    - _CustomWindNoiseSmoothstep: {r: 0, g: 1, b: 0, a: 0}
+    - _DDXY: {r: 1, g: 1, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FaceWindDir_MaskSmoothstep: {r: 0, g: 1.5, b: 0, a: 0}
+    - _MainBaseColor: {r: 0.99215686, g: 0.9214055, b: 0.6784314, a: 0}
+    - _MainBottomTint: {r: 1, g: 1, b: 1, a: 0}
+    - _MainTopTint: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 0}
+    - _NOISESCALE: {r: 20, g: 5.6, b: 0, a: 0}
+    - _NOISESMOOTHSTEP: {r: 0.4, g: 1, b: 0, a: 0}
+    - _Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _PannerSpeed: {r: 1, g: 0, b: 0, a: 0}
+    - _RepulseVertexOffset: {r: 0, g: -0.5, b: 0, a: 0}
+    - _SecondWindSmoothstep: {r: -0.5, g: 1, b: 0, a: 0}
+    - _TerrainTexOffset: {r: -20, g: -20, b: 0, a: 0}
+    - _Tint: {r: 0.05642058, g: 0.41509432, b: 0, a: 0}
+    - _TurbulenceSmoothstep: {r: -2, g: 0, b: 0, a: 0}
+    - _VariantBaseColor: {r: 1, g: 1, b: 1, a: 0.8}
+    - _VariantBottomTint: {r: 0.6117647, g: 0.5764706, b: 0.4352941, a: 0}
+    - _VariantTopTint: {r: 0.8392157, g: 0.6556298, b: 0, a: 0}
+    - _VariantTopTint1: {r: 0.61, g: 0.5777768, b: 0.4342373, a: 0}
+    - _Vector1: {r: 0.7, g: -1, b: 0.7, a: 0}
+    - _VectorUp: {r: 0, g: 1, b: 0, a: 0}
+    - _WindBezierPositionOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _WindBezierPositionOffset1: {r: 0, g: 0, b: 0, a: 0}
+    - _WindColorSmoothstep: {r: 0.4, g: 1, b: 0, a: 0}
+    - _WindSmoothstep: {r: -7.84, g: 1.2, b: 0, a: 0}
+    - _p1: {r: 0, g: 0, b: 0.1, a: 0}
+    - _p1CrushOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _p2: {r: 0, g: -1, b: 0.36, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &8263598183453607330
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 9

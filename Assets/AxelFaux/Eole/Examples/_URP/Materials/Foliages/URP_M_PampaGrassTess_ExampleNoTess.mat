@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: URP_M_PampaGrassTess_ExampleNoTess
+  m_Shader: {fileID: 4800000, guid: 44efcabee6239bc4fbdf1fc02e4ff813, type: 3}
+  m_Parent: {fileID: 2100000, guid: a5c4dad8e3a11b249b0e0360685579bf, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _DEBUGDISABLEWINDDPO_ON
+  - _DEBUGWIND_ON
+  - _USEAIRSHEENTINT_ON
+  - _USECOLORMAP_ON
+  - _USECRUSH_ON
+  - _USETRANSLUCENCY_ON
+  - _WIND_ADVANCED
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _TessValue: 1
+    m_Colors: []
+  m_BuildTextureStacks: []

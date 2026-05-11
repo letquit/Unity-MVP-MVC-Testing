@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: URP_M_GrassTess_02
+  m_Shader: {fileID: 4800000, guid: 44efcabee6239bc4fbdf1fc02e4ff813, type: 3}
+  m_Parent: {fileID: 2100000, guid: 55cc42d6f152f8d46a89b8b06befc197, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _DEBUGDISABLEWINDDPO_ON
+  - _DEBUGWIND_ON
+  - _USEAIRSHEENTINT_ON
+  - _USECOLORMAP_ON
+  - _USECRUSH_ON
+  - _USETRANSLUCENCY_ON
+  - _WIND_ADVANCED
+  m_InvalidKeywords:
+  - _COLOR_USEAIRTINT_ON
+  - _COLOR_USETERRAINTEXCOLOR_ON
+  - _CRUSHFLATTENSCALE_ON
+  - _KEYWORD
+  - _KEYWORD0
+  - _KEYWORD0_ON
+  - _TOGGLESWITCH0_ON
+  - _USEAIRTINT_ON
+  - _USEDEBUGWIND_ON
+  - _USETERRAINBLENDING_ON
+  - _USETERRAINTEXCOLOR_ON
+  - _USEWINDTINT_ON
+  - _USEWIND_ON
+  - _WINDKEYWORDS_SIMPLE
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 783da2029cb6470409bf47fab8a80363, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _DebugWind: 1
+    - _VariantContrast: 0.04
+    - _VariantOffset: -1.3
+    m_Colors:
+    - _BezierOffsetP1: {r: -0.2, g: -0.2, b: NaN, a: NaN}
+    - _BezierOffsetP2: {r: 1.5, g: -0.7, b: NaN, a: NaN}
+    - _BezierP1: {r: 0, g: 0, b: NaN, a: NaN}
+    - _BezierP2: {r: 0.2, g: 0, b: NaN, a: NaN}
+    - _MainBaseColor: {r: 0.1723033, g: 0.18904951, b: 0.3018868, a: 0.6156863}
+    - _SecondWindSmoothstep: {r: -0.15, g: 1, b: NaN, a: NaN}
+    - _VariantBaseColor: {r: 0.8679245, g: 0.6568469, b: 0.59362763, a: 0.6392157}
+  m_BuildTextureStacks: []
+--- !u!114 &8263598183453607330
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 9

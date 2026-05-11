@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 1a5986a0f8389a4459cab2d54b9f6cb1
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - CrushRenderTexture: {fileID: 8400000, guid: d6d970a998063144aba4c205990882e8, type: 2}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

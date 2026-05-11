@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Foliage Wind Advanced
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;460;-2616.38,-322.7581;Inherit;False;756.6169;477.5266;;10;456;418;420;417;419;468;458;459;457;414;Windy
+    Position offset;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;464;-1684.317,-538.025;Inherit;False;202;292.8169;Offset;2;50;49;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;41;-186.5586,-302.5906;Inherit;False;295.4391;294.9032;;1;365;Bezier
+    Curve;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;177;-3111.785,182.748;Inherit;False;1679.735;510.4811;;16;295;423;422;338;444;331;353;354;356;355;330;340;341;443;445;179;Rotation
+    Angle from wind;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;34;-3181.702,-854.0741;Inherit;False;535.8751;438.6353;;7;454;453;461;462;382;463;465;Default
+    Bezier Points;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;255;-2611.018,-828.4008;Inherit;False;749.587;401.7991;;6;466;302;358;357;252;251;Related
+    to Object Scale;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;182;-1370.791,-264.9174;Inherit;False;493.8888;380.9754;Normalized
+    rot axis 0,1,0. (Keep the bezier curve in a direction);2;187;195;Rotate About
+    Axis;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;179;-1666.529,398.9422;Inherit;False;202.2717;181.8519;Angle
+    in radian;1;192;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.RotateAboutAxisNode;195;-1245.429,-41.0737;Inherit;False;False;4;0;FLOAT3;0,1,0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;251;-2349.491,-701.7008;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;252;-2348.199,-562.6526;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionSwitch;357;-2156.199,-786.6525;Inherit;False;Position
+    relative to object scale;True;0;2;-1;In 0;In 1;Object;-1;10;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionSwitch;358;-2156.199,-642.6529;Inherit;False;Position
+    relative to object scale;True;0;2;-1;In 0;In 1;Instance;357;10;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CommentaryNode;431;-1280.796,271.9467;Inherit;False;1146;379.6199;;9;440;439;438;437;436;435;434;433;432;Coord.
+    Mask;1,1,0,1;0;0\nNode;AmplifyShaderEditor.LerpOp;192;-1618.529,445.9422;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;800;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.StickyNoteNode;451;-1358.202,-482.9308;Inherit;False;480.103;127.2327;;Recalculate
+    Bezier Points Position;1,1,1,1;Before calculating the Bezier curve, we calculate
+    the point's position offset based on the wind direction. So that the grass behaves
+    is a realistic way.;0;0\nNode;AmplifyShaderEditor.TexCoordVertexDataNode;432;-830.5739,321.9468;Inherit;False;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionSwitch;433;-867.7962,439.3774;Inherit;False;Vertex
+    Color Mask;False;0;3;2;R;G;B;Object;-1;10;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSwitch;435;-427.197,415.6774;Inherit;False;Coord
+    Mask;False;1;3;1;Vertex TexCoord;Vertex Color;Custom;Object;-1;10;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSubtitle;436;-1101.749,400.7933;Inherit;False;Mask
+    : Vertex Color (R);1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSubtitle;437;-1101.749,467.7936;Inherit;False;Mask
+    : Vertex Color (G);1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSubtitle;438;-1099.749,535.7935;Inherit;False;Mask
+    : Vertex Color (B);1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.VertexColorNode;439;-1265.796,418.3773;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionSubtitle;440;-638.7489,369.7932;Inherit;False;Mask
+    : TexCoord;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;419;-2167.328,-268.4048;Inherit;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;417;-2012.767,-211.74;Inherit;False;3;3;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;50;-1634.317,-488.0251;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;49;-1634.317,-380.2082;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;465;-2967.99,-779.2592;Inherit;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.ObjectScaleNode;302;-2573.873,-584.1284;Inherit;False;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.WireNode;466;-2436.312,-611.059;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;463;-2971.55,-651.4383;Inherit;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;453;-2781.289,-779.3799;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;454;-2780.691,-650.8057;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.TransformDirectionNode;445;-2916.894,466.482;Inherit;False;World;Object;False;Fast;False;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionSwitch;443;-2709.881,400.3962;Inherit;False;Transform
+    Dir To Object;True;0;2;-1;In 0;In 1;Object;-1;10;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.ComponentMaskNode;341;-2320.108,400.8227;Inherit;False;True;False;True;True;1;0;FLOAT3;0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.ACosOpNode;340;-1979.396,308.2226;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DotProductOpNode;330;-2095.375,307.7174;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;355;-2292.715,477.61;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.DotProductOpNode;356;-2096.712,454.61;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;354;-1803.799,364.3391;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SignOpNode;353;-1980.799,454.3393;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.ComponentMaskNode;331;-2317.483,246.1459;Inherit;False;True;False;True;True;1;0;FLOAT3;0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;444;-2446.881,469.3964;Inherit;False;FLOAT3;1;0;FLOAT3;0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.RotateAboutAxisNode;187;-1245.429,-201.0734;Inherit;False;False;4;0;FLOAT3;0,1,0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;186.9814,-185.0674;Inherit;False;True;-1;XYZ;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;420;-2169.882,-115.1776;Inherit;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;418;-2017.6,-47.65364;Inherit;False;3;3;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WireNode;458;-2434.117,-144.1319;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.WireNode;459;-2405.225,-153.2557;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;414;-2604.23,-25.82931;Inherit;False;423;wind_mask;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;423;-1906.7,598.2727;Inherit;False;wind_mask;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;295;-3064.292,402.4088;Inherit;False;W.
+    Direction;3;1;False;1;0;FLOAT3;0,0,1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;422;-2027,600;Inherit;False;W.
+    Mask;1;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;434;-624,528;Inherit;False;Coord
+    Mask;1;2;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Vector2Node;461;-3129.562,-785.0333;Half;False;Property;_BezierP1;P1;2;0;Create;False;0;0;0;False;0;False;0,0.1;0,0;0;3;FLOAT2;0;FLOAT;1;FLOAT;2\nNode;AmplifyShaderEditor.Vector2Node;462;-3146.875,-650.5464;Half;False;Property;_BezierP2;P2;3;0;Create;False;0;0;0;False;0;False;-0.1,0.5;0,0;0;3;FLOAT2;0;FLOAT;1;FLOAT;2\nNode;AmplifyShaderEditor.RangedFloatNode;382;-3103.613,-509.0657;Half;False;Property;_BezierAlpha;Alpha;0;1;[Header];Create;False;1;Idle
+    Bezier Points;0;0;False;1;Space(5);False;1;0;0;1;0;1;FLOAT;0\nNode;AmplifyShaderEditor.Vector2Node;456;-2373.176,-272.4581;Half;False;Property;_BezierOffsetP1;Offset
+    P1;4;0;Create;False;0;0;0;False;0;False;0.3,-0.5;0,0;0;3;FLOAT2;0;FLOAT;1;FLOAT;2\nNode;AmplifyShaderEditor.Vector2Node;457;-2376.329,-114.6309;Half;False;Property;_BezierOffsetP2;Offset
+    P2;5;0;Create;False;0;0;0;False;0;False;0.5,-0.75;0,0;0;3;FLOAT2;0;FLOAT;1;FLOAT;2\nNode;AmplifyShaderEditor.RangedFloatNode;468;-2318.42,52.73071;Half;False;Property;_BezierOffsetAlpha;Alpha;1;1;[Header];Create;False;1;Windy
+    Bezier Points;0;0;False;1;Space(5);False;1;0;0;1;0;1;FLOAT;0\nNode;AmplifyShaderEditor.Vector3Node;338;-2512.739,245.0361;Half;False;Constant;_RelativeForward;RelativeForward;6;0;Create;True;0;0;0;False;0;False;0,0,1;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionNode;365;-125.7028,-190.5909;Inherit;False;Bezier
+    Curve;-1;;1;a72fb9fafff8ac843a1b00937be215e5;1,7,0;5;15;FLOAT3;0,1,0;False;14;FLOAT3;0,1,1;False;13;FLOAT3;0,0,1;False;18;FLOAT3;0,0,1;False;6;FLOAT;0;False;1;FLOAT3;0\nWireConnection;195;1;192;0\nWireConnection;195;3;49;0\nWireConnection;251;0;453;0\nWireConnection;251;1;302;2\nWireConnection;252;0;466;0\nWireConnection;252;1;302;2\nWireConnection;357;0;453;0\nWireConnection;357;1;251;0\nWireConnection;358;0;454;0\nWireConnection;358;1;252;0\nWireConnection;192;1;354;0\nWireConnection;192;2;423;0\nWireConnection;433;0;436;0\nWireConnection;433;1;437;0\nWireConnection;433;2;438;0\nWireConnection;435;0;440;0\nWireConnection;435;1;433;0\nWireConnection;435;2;434;0\nWireConnection;436;0;439;1\nWireConnection;437;0;439;2\nWireConnection;438;0;439;3\nWireConnection;440;0;432;2\nWireConnection;419;1;456;2\nWireConnection;419;2;456;1\nWireConnection;417;0;419;0\nWireConnection;417;1;459;0\nWireConnection;417;2;468;0\nWireConnection;50;0;357;0\nWireConnection;50;1;417;0\nWireConnection;49;0;358;0\nWireConnection;49;1;418;0\nWireConnection;465;1;461;2\nWireConnection;465;2;461;1\nWireConnection;466;0;454;0\nWireConnection;463;1;462;2\nWireConnection;463;2;462;1\nWireConnection;453;0;465;0\nWireConnection;453;1;382;0\nWireConnection;454;0;463;0\nWireConnection;454;1;382;0\nWireConnection;445;0;295;0\nWireConnection;443;0;295;0\nWireConnection;443;1;445;0\nWireConnection;341;0;443;0\nWireConnection;340;0;330;0\nWireConnection;330;0;331;0\nWireConnection;330;1;341;0\nWireConnection;355;0;444;2\nWireConnection;355;1;444;0\nWireConnection;356;0;331;0\nWireConnection;356;1;355;0\nWireConnection;354;0;340;0\nWireConnection;354;1;353;0\nWireConnection;353;0;356;0\nWireConnection;331;0;338;0\nWireConnection;444;0;443;0\nWireConnection;187;1;192;0\nWireConnection;187;3;50;0\nWireConnection;0;0;365;0\nWireConnection;420;1;457;2\nWireConnection;420;2;457;1\nWireConnection;418;0;420;0\nWireConnection;418;1;414;0\nWireConnection;418;2;468;0\nWireConnection;458;0;414;0\nWireConnection;459;0;458;0\nWireConnection;423;0;422;0\nWireConnection;365;15;187;0\nWireConnection;365;14;195;0\nWireConnection;365;6;435;0\nASEEND*/\n//CHKSM=BE351AC7290DBE52CF12CE3CA1EEF49C928A11E0"
+  m_functionName: 
+  m_description: "\t\t"
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 0.015686275, g: 0.39215687, b: 0, a: 1}
+  m_customNodeCategory: Eole
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

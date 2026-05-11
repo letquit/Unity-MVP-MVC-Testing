@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Wind Turbulence
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;141;-3333.564,1869.646;Inherit;False;1150;380.6199;;10;140;146;142;145;144;143;138;134;139;11;Coord.
+    Mask;1,1,0,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;124;-3472.636,1375.98;Inherit;False;541;286;random
+    offset;4;119;122;123;120;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionSwitch;139;-2920.564,2037.077;Inherit;False;Vertex
+    Color Mask;False;0;3;2;R;G;B;Object;-1;10;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;134;-2849.841,2165.266;Inherit;False;Coord
+    Mask;1;3;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSwitch;138;-2479.965,2013.378;Inherit;False;Coord
+    Mask;False;1;3;1;Vertex TexCoord;Vertex Color;Custom;Object;-1;10;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSubtitle;143;-3154.517,1998.494;Inherit;False;Mask
+    : Vertex Color (R);1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSubtitle;144;-3154.517,2065.492;Inherit;False;Mask
+    : Vertex Color (G);1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSubtitle;145;-3152.517,2133.492;Inherit;False;Mask
+    : Vertex Color (B);1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSubtitle;142;-2691.517,1967.495;Inherit;False;Mask
+    : TexCoord;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSubtitle;146;-2686.517,2167.492;Inherit;False;Mask
+    : Custom;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.VertexColorNode;140;-3318.564,2016.078;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.ObjectToWorldTransfNode;119;-3422.636,1425.98;Inherit;False;1;0;FLOAT4;0,0,0,1;False;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;122;-3227.636,1431.98;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;100;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;123;-3227.636,1526.98;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;33;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleTimeNode;95;-3107.405,1299.71;Inherit;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;120;-3076.706,1469.89;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.PosVertexDataNode;148;-2892.371,1487.378;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.SimpleAddOpNode;149;-2673.151,1428.378;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;114;-2455.471,1431.065;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CosOpNode;93;-2337.423,1430.786;Inherit;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.ObjectScaleNode;137;-2329.284,1722.097;Inherit;False;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;99;-2081.19,1583.88;Inherit;False;4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;151;-717.0955,1481.074;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;150;-923.0955,1454.074;Inherit;False;In;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-551.813,1481.629;Inherit;False;True;-1;XYZ;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;156;-2863.721,1362.579;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSwitch;89;-1184,1680;Inherit;False;Normalize
+    Direction;True;0;2;0;In 0;In 1;Object;-1;10;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.NormalizeNode;90;-1328,1744;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;88;-1488,1680;Inherit;False;Direction;3;2;False;1;0;FLOAT3;0.7,0,0.7;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;105;-912,1552;Inherit;False;3;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;152;-912,1152;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;85;-784,1168;Inherit;False;False;-1;Turbulence
+    Mask;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.WireNode;159;-1943.077,1203.77;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.WireNode;160;-1900.383,1187.445;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SmoothstepOpNode;112;-1327.557,1354.003;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SaturateNode;153;-1183.557,1354.003;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;108;-1519.557,1290.003;Inherit;False;Mask;1;1;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;97;-3242.151,1294.544;Half;False;Property;_TurbulenceSpeed;Speed;3;0;Create;False;0;0;0;False;0;False;0.2;-0.2;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;100;-2658.604,1537.182;Half;False;Property;_TurbulenceFrequency;Frequency;4;0;Create;False;0;0;0;False;0;False;0.1;0;0.01;10;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;12;-2341.197,1644.141;Half;False;Property;_TurbulenceDisplacement;Displacement;0;0;Create;False;1;Turbulence;0;0;False;0;False;0.03;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;111;-1631.557,1370.003;Half;False;Property;_TurbulenceThresholdMin;Threshold
+    Min;1;0;Create;False;0;0;0;False;0;False;0;0;0;1;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;136;-1631.557,1450.003;Half;False;Property;_TurbulenceSmoothstepMax;Smoothstep;2;0;Create;False;0;0;0;False;0;False;1;0;0;1;0;1;FLOAT;0\nNode;AmplifyShaderEditor.TexCoordVertexDataNode;11;-2883.342,1919.647;Inherit;False;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nWireConnection;139;0;143;0\nWireConnection;139;1;144;0\nWireConnection;139;2;145;0\nWireConnection;138;0;142;0\nWireConnection;138;1;139;0\nWireConnection;138;2;146;0\nWireConnection;143;0;140;1\nWireConnection;144;0;140;2\nWireConnection;145;0;140;3\nWireConnection;142;0;11;2\nWireConnection;146;0;134;0\nWireConnection;122;0;119;1\nWireConnection;123;0;119;3\nWireConnection;95;0;97;0\nWireConnection;120;0;122;0\nWireConnection;120;1;123;0\nWireConnection;149;0;156;0\nWireConnection;149;1;148;2\nWireConnection;114;0;149;0\nWireConnection;114;1;100;0\nWireConnection;93;0;114;0\nWireConnection;99;0;93;0\nWireConnection;99;1;12;0\nWireConnection;99;2;137;2\nWireConnection;99;3;138;0\nWireConnection;151;0;150;0\nWireConnection;151;1;105;0\nWireConnection;0;0;151;0\nWireConnection;156;0;120;0\nWireConnection;156;1;95;0\nWireConnection;89;0;88;0\nWireConnection;89;1;90;0\nWireConnection;90;0;88;0\nWireConnection;105;0;153;0\nWireConnection;105;1;99;0\nWireConnection;105;2;89;0\nWireConnection;152;0;160;0\nWireConnection;152;1;153;0\nWireConnection;85;0;152;0\nWireConnection;159;0;99;0\nWireConnection;160;0;159;0\nWireConnection;112;0;108;0\nWireConnection;112;2;136;0\nWireConnection;153;0;112;0\nASEEND*/\n//CHKSM=9305B4F7EBAF0A5212F99D4D8460079DD3C64633"
+  m_functionName: 
+  m_description: Displacement depending on 'Wind Mask' function.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 0.015686275, g: 0.39215687, b: 0, a: 1}
+  m_customNodeCategory: Eole
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Debug Wind
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;137;704.9653,-159.5969;Inherit;False;289;190;Stripped
+    in build;1;134;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;108;-1597.007,-197.9984;Inherit;False;578.5993;322.993;Wind
+    Gradient Color;3;81;82;111;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;100;-1297.043,-934.7256;Inherit;False;626.2821;317.4773;Toggle
+    Value;6;103;96;98;99;70;105;;0.981607,1,0,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;80;-1137.71,322.862;Inherit;False;591;240;Boost
+    turbulence mask;4;72;71;73;61;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;56;70.746,-138.0587;Inherit;False;450.7998;255.1;Is
+    debugging;3;101;33;110;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;99;-1036.297,-809.1505;Inherit;False;2;2;0;INT;0;False;1;INT;0;False;1;INT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;103;-923.1024,-742.951;Inherit;False;debugWindTurbulence;-1;True;1;0;INT;0;False;1;INT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;105;-924.403,-889.8508;Inherit;False;debugWind;-1;True;1;0;INT;0;False;1;INT;0\nNode;AmplifyShaderEditor.Compare;33;341.5456,-88.05872;Inherit;False;3;4;0;INT;0;False;1;FLOAT;1;False;2;COLOR;0,0,0,0;False;3;FLOAT4;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.GetLocalVarNode;101;94.82129,-89.00681;Inherit;False;98;isDebugWind;1;0;OBJECT;;False;1;INT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;110;109.7858,38.53007;Inherit;False;109;albedo;1;0;OBJECT;;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.LerpOp;62;-168.065,-32.5;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0\nNode;AmplifyShaderEditor.WireNode;124;-281.783,213.5914;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;61;-1022.545,367.7865;Inherit;False;Turbulence
+    Mask;1;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SaturateNode;72;-711.7101,375.862;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;71;-834.7098,372.862;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;97;-517.6729,250.2765;Inherit;False;0;4;0;INT;0;False;1;FLOAT;1;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;130;-760.4578,249.86;Inherit;False;103;debugWindTurbulence;1;0;OBJECT;;False;1;INT;0\nNode;AmplifyShaderEditor.FunctionInput;111;-1495.829,-60.63411;Inherit;False;W.
+    Mask;1;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;106;-806.6747,-180.1656;Inherit;False;0;4;0;INT;0;False;1;FLOAT;1;False;2;COLOR;0,0,0,0;False;3;FLOAT4;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.FunctionInput;30;-1556.664,146.9358;Inherit;False;Albedo;4;0;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;109;-1429.523,147.7243;Inherit;False;albedo;-1;True;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.GetLocalVarNode;107;-1000.375,-180.1658;Inherit;False;105;debugWind;1;0;OBJECT;;False;1;INT;0\nNode;AmplifyShaderEditor.ConditionalIfNode;131;-496.5457,-368.2467;Inherit;False;False;5;0;INT;0;False;1;INT;1;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;4;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.GetLocalVarNode;128;-755.5076,-478.2239;Inherit;False;105;debugWind;1;0;OBJECT;;False;1;INT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;104;-817.192,-547.3922;Inherit;False;103;debugWindTurbulence;1;0;OBJECT;;False;1;INT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;98;-924.6612,-814.7371;Inherit;False;isDebugWind;-1;True;1;0;INT;0;False;1;INT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;115;392,-235;Inherit;False;109;albedo;1;0;OBJECT;;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionSubtitle;116;1045.083,-106.4078;Inherit;False;Enabled;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionSubtitle;141;1044.795,-229.162;Inherit;False;Disabled;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionSwitch;139;1300.342,-231.454;Inherit;False;Enabled;True;1;2;-1;In
+    0;In 1;Object;-1;10;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0,0,0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.StaticSwitch;134;754.9653,-109.5969;Inherit;False;Property;_DebugWind;Debug
+    Wind;0;0;Create;True;0;0;0;False;1;HideInInspector;False;1;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;Fragment;9;1;FLOAT4;0,0,0,0;False;0;FLOAT4;0,0,0,0;False;2;FLOAT4;0,0,0,0;False;3;FLOAT4;0,0,0,0;False;4;FLOAT4;0,0,0,0;False;5;FLOAT4;0,0,0,0;False;6;FLOAT4;0,0,0,0;False;7;FLOAT4;0,0,0,0;False;8;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionOutput;0;1531.148,-228.5363;Inherit;False;True;-1;RGBA;0;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.ColorNode;64;-498.9393,-11.94329;Half;False;Constant;_TurbulenceTintDebug;TurbulenceTintDebug;0;1;[HDR];Create;True;0;0;0;False;0;False;1,1,1,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.GradientNode;82;-1543.007,-129.5985;Inherit;False;0;7;2;0.5,0.5,0.5,0;0,0.716,0,0.06471352;1,1,0,0.2205844;1,0.5698085,0,0.5470665;1,0.3047979,0,0.7499962;1,0,0,0.9411765;0.5626073,0,1,1;1,0;1,1;0;1;OBJECT;0\nNode;AmplifyShaderEditor.GradientSampleNode;81;-1343.408,-129.9986;Inherit;True;2;0;OBJECT;;False;1;FLOAT;0;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.RangedFloatNode;73;-1021.711,445.8619;Half;False;Constant;_BoostTurbulence;BoostTurbulence;1;0;Create;True;0;0;0;False;0;False;20;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.ColorNode;126;-782.1204,-400.3724;Half;False;Constant;_Color0;Color
+    0;1;0;Create;True;0;0;0;False;0;False;0,0,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.IntNode;96;-1274.343,-743.9799;Inherit;False;Global;DebugWindTurbulence;Debug
+    Wind Turbulence;1;0;Create;True;0;0;0;False;0;False;0;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.IntNode;70;-1233.817,-888.6254;Inherit;False;Global;DebugWind;Debug
+    Wind;1;0;Create;True;0;0;0;False;0;False;0;0;False;0;1;INT;0\nWireConnection;99;0;70;0\nWireConnection;99;1;96;0\nWireConnection;103;0;96;0\nWireConnection;105;0;70;0\nWireConnection;33;0;101;0\nWireConnection;33;2;62;0\nWireConnection;33;3;110;0\nWireConnection;62;0;131;0\nWireConnection;62;1;64;0\nWireConnection;62;2;124;0\nWireConnection;124;0;97;0\nWireConnection;72;0;71;0\nWireConnection;71;0;61;0\nWireConnection;71;1;73;0\nWireConnection;97;0;130;0\nWireConnection;97;2;72;0\nWireConnection;106;0;107;0\nWireConnection;106;2;81;0\nWireConnection;106;3;109;0\nWireConnection;109;0;30;0\nWireConnection;131;0;104;0\nWireConnection;131;1;128;0\nWireConnection;131;2;126;0\nWireConnection;131;3;106;0\nWireConnection;131;4;106;0\nWireConnection;98;0;99;0\nWireConnection;116;0;134;0\nWireConnection;141;0;115;0\nWireConnection;139;0;141;0\nWireConnection;139;1;116;0\nWireConnection;134;1;115;0\nWireConnection;134;0;33;0\nWireConnection;0;0;139;0\nWireConnection;81;0;82;0\nWireConnection;81;1;111;0\nASEEND*/\n//CHKSM=8AE2A9DCFF55CCC2C2922123090B939853D2D4BA"
+  m_functionName: 
+  m_description: 'Output an RGB lerping two colors depending on the Wind mask.
+
+
+    This
+    feature is compiled only in editor and "development build".'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 1
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 0.3776164, g: 0, b: 1, a: 1}
+  m_customNodeCategory: Eole
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

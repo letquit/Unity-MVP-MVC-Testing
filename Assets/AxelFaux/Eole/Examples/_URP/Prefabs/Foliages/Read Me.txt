@@ -1,0 +1,4 @@
+You can use these prefabs to as detail mesh on your terrain.
+
+Please refer to Unity Terrain documentation for more informations about this system:
+https://docs.unity3d.com/Manual/terrain-Grass.html

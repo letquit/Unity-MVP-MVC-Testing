@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Foliage Brightness
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;82;-1029.462,-343.7875;Inherit;False;491.8838;239.1543;;3;32;72;71;Wind
+    Brightness;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;81;-521.4186,-329.324;Inherit;False;566.9761;259.2957;;3;78;37;68;Crush
+    Brightness;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;57;-2166.549,-389.045;Inherit;False;908.2189;349.1899;;8;87;65;4;67;66;9;10;54;Low
+    Height Brightness (deprecated);1,0,0,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;56;-595.3765,-21.77835;Inherit;False;644.3228;230.2551;Coord
+    mask;4;39;40;30;16;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;85;294.5658,-438.9352;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;1;COLOR;0\nNode;AmplifyShaderEditor.SaturateNode;91;424.9192,-439.8798;Inherit;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.ComponentMaskNode;90;554.6704,-443.8396;Inherit;False;True;True;True;False;1;0;COLOR;0,0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.TexCoordVertexDataNode;16;-564.8763,28.22174;Inherit;False;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionInput;30;-378.1595,70.56367;Inherit;False;Coord
+    Mask;1;3;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SaturateNode;40;-80.95229,74.47683;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;54;-1735.628,-184.9568;Inherit;False;Contrast;-1;;4;7164b1ef5e591f040ad191b2a72db760;0;2;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;10;-1869.767,-264.7735;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SaturateNode;4;-1580.386,-185.6344;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.LerpOp;71;-719.5771,-289.7622;Inherit;False;3;0;FLOAT;1;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;39;-202.9518,73.47683;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;2;False;1;FLOAT;0\nNode;AmplifyShaderEditor.LerpOp;87;-1426.444,-257.8726;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;1;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.ObjectScaleNode;9;-2034.336,-343.0447;Inherit;False;True;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionInput;37;-389.5695,-150.9031;Inherit;False;Crush
+    Mask;1;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.ComponentMaskNode;28;304.1543,-556.3978;Inherit;False;False;False;False;True;1;0;COLOR;0,0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;23;124.1852,-441.9073;Inherit;False;In;5;0;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.FunctionOutput;0;927.0249,-572.506;Inherit;False;True;-1;RGBA;0;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.DynamicAppendNode;29;777.6031,-573.5363;Inherit;False;COLOR;4;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;COLOR;0\nNode;AmplifyShaderEditor.LerpOp;83;104.8466,-286.0592;Inherit;False;3;0;FLOAT;1;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.LerpOp;78;-131.1161,-288.9357;Inherit;False;3;0;FLOAT;1;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;32;-885.9352,-196.0994;Inherit;False;Wind
+    Mask;1;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;67;-2143.165,-198.5605;Half;False;Property;_BrightnessHeightThreshold;Height
+    Threshold;1;0;Create;False;0;0;0;False;0;False;1;0;0;10;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;66;-2018.167,-124.5602;Half;False;Property;_BrightnessHeightContrast;Height
+    Contrast;2;0;Create;False;0;0;0;False;0;False;1;0;0;10;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;65;-1718.166,-292.1159;Half;False;Property;_BrightnessLowHeight;Low
+    Height Brightness;0;0;Create;False;0;0;0;False;0;False;0.5;0;0;2;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;72;-1005.703,-270.7404;Half;False;Property;_WindBrightness;Wind
+    Brightness;4;0;Create;True;0;0;0;False;1;Space(10);False;0.5;0;0;2;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;68;-498.5013,-228.5562;Half;False;Property;_CrushBrightness;Crush
+    Brightness;3;0;Create;False;0;0;0;False;0;False;0.5;0;0;1;0;1;FLOAT;0\nWireConnection;85;0;23;0\nWireConnection;85;1;83;0\nWireConnection;91;0;85;0\nWireConnection;90;0;91;0\nWireConnection;30;0;16;2\nWireConnection;40;0;39;0\nWireConnection;54;2;10;0\nWireConnection;54;3;66;0\nWireConnection;10;0;9;2\nWireConnection;10;1;67;0\nWireConnection;4;0;54;0\nWireConnection;71;1;72;0\nWireConnection;71;2;32;0\nWireConnection;39;0;30;0\nWireConnection;87;0;65;0\nWireConnection;87;2;4;0\nWireConnection;28;0;23;0\nWireConnection;0;0;29;0\nWireConnection;29;0;90;0\nWireConnection;29;3;28;0\nWireConnection;83;1;78;0\nWireConnection;83;2;40;0\nWireConnection;78;0;71;0\nWireConnection;78;1;68;0\nWireConnection;78;2;37;0\nASEEND*/\n//CHKSM=380C4DE6F65A72C2F5420595DBFE43B74339563A"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 0.015686275, g: 0.39215687, b: 0, a: 1}
+  m_customNodeCategory: Eole
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

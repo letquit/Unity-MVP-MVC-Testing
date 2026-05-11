@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6872936585080694796
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: URP_M_TreeLeaves
+  m_Shader: {fileID: 4800000, guid: f50ce8cc679d97c43ab06b6b20c03a00, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _DEBUGDISABLEWINDDPO_ON
+  - _DEBUGWIND_ON
+  - _USETRANSLUCENCY_ON
+  - _WIND_SIMPLE
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: f0a57147656ae624d912366f6bcb2286, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffuseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaClip: 0
+    - _AlphaCutoff: 0.5
+    - _AlphaThreshold: 0.5
+    - _AlphaToMask: 0
+    - _BezierAlpha: 1
+    - _BezierOffsetAlpha: 1
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 1
+    - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
+    - _ColorMapBlendOffset: 0
+    - _ColorMapFadeContrast: 0
+    - _ColormapBlendOffset: 0
+    - _ColormapFadeContrast: 0
+    - _CrushAngle: 60
+    - _CrushBrightness: 0.5
+    - _CrushFlattenScale: 0
+    - _CrushHeightOffset: -0.9
+    - _Cull: 0
+    - _Cutoff: 0.5
+    - _DebugDisableWPO: 1
+    - _DebugDisableWindDPO: 1
+    - _DebugWind: 1
+    - _DetailAlbedoMapScale: 1
+    - _DetailNormalMapScale: 1
+    - _Direct: 4
+    - _DotViewMultiplier: 1
+    - _DotViewPower: 3
+    - _DotViewPowerMax: 36.9
+    - _DotViewPowerMin: 29.8
+    - _DstBlend: 0
+    - _DstBlendAlpha: 0
+    - _EnvironmentReflections: 1
+    - _FlattenNormal: 0
+    - _FlattenVertexNormal: 0.6
+    - _Float2: 1
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _IndirectDiffuse: 0
+    - _LightColorBlend: 0
+    - _Metallic: 0
+    - _NormalStrength: 0.32
+    - _OcclusionStrength: 1
+    - _Parallax: 0.005
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _Rim: 0
+    - _SecondWindSmoothstepMax: 1
+    - _SecondWindSmoothstepMin: 0
+    - _Shadows: 7
+    - _SimpleWindDisplacement: 0.2
+    - _SimpleWindyYOffset: -0.5
+    - _Smoothness: 0.065
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SpecularIntensity: 10
+    - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
+    - _Surface: 0
+    - _TessMax: 25
+    - _TessMin: 10
+    - _TessValue: 16
+    - _TransAmbient: 0.1
+    - _TransDirect: 0.9
+    - _TransNormal: 0.182
+    - _TransScattering: 2
+    - _TransShadow: 0.505
+    - _TransStrength: 50
+    - _TranslucencyDirect: 5
+    - _TranslucencyDotViewPower: 80
+    - _TranslucencyDotViewPower1: 36
+    - _TranslucencyFlattenNormal: 0.5
+    - _TranslucencyShadows: 1
+    - _TranslucencyStrength: 3
+    - _TreeBendFrequency: 0.1
+    - _TreeBendFrequencyOffsetRandomn: 1
+    - _TreeBendFrequencySpeed: 15
+    - _TreeBendMaskDistanceOffset: 0
+    - _TreeBendMaskFalloff: 3
+    - _TreeBendMaxAngle: 0.2617994
+    - _TreeBendMinAngle: 0.034906585
+    - _TurbulenceDisplacement: 0.08
+    - _TurbulenceFrequency: 0.03
+    - _TurbulenceSmoothstepMax: 1
+    - _TurbulenceSpeed: 0.5
+    - _TurbulenceThresholdMax: 0.8
+    - _TurbulenceThresholdMin: 0
+    - _UseColormap: 0
+    - _UseCrush: 0
+    - _UseDebugWind: 1
+    - _UseTerrainBlending: 0
+    - _UseTranslucency: 1
+    - _UseTreeBend: 2
+    - _UseWindTint: 0
+    - _VariantContrast: -0.36
+    - _VariantFalloff: 1.56
+    - _VariantHeightContrast: 0
+    - _VariantHeightThreshold: 3.2
+    - _VariantOffset: -4.64
+    - _VariantThreshold: 7.86
+    - _VariantThreshold1: 1
+    - _Wind: 1
+    - _WindBrightness: 1
+    - _Wind_Advanced: 1
+    - _Wind_Simple: 1
+    - _WorkflowMode: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _BaseColor: {r: 0.8679245, g: 0.5128343, b: 0, a: 1}
+    - _BezierOffsetP1: {r: 0.3, g: -0.5, b: 0, a: 0}
+    - _BezierOffsetP2: {r: 0.5, g: -0.75, b: 0, a: 0}
+    - _BezierP1: {r: 0, g: 0.1, b: 0, a: 0}
+    - _BezierP2: {r: -0.1, g: 0.5, b: 0, a: 0}
+    - _Color: {r: 0.8679245, g: 0.5128343, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MainBaseColor: {r: 0.7176471, g: 0.093657695, b: 0.081094146, a: 1}
+    - _SecondWindSmoothstep: {r: -0.2, g: 1, b: 0, a: 0}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _VariantBaseColor: {r: 1, g: 0.48271185, b: 0.45499998, a: 1}
+    - _WindSmoothstep: {r: 0, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []

@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BIRP_M_Trunk
+  m_Shader: {fileID: 4800000, guid: 59bb0ffb597290d4e95111c3f6bd0979, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _DEBUGDISABLEWINDDPO_ON
+  - _DEBUGWIND_ON
+  m_InvalidKeywords:
+  - _USEAIRSHEENTINT_ON
+  - _USECOLORMAP_ON
+  - _USETRANSLUCENCY_ON
+  - _WIND_NONE
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 9a27524710bf4414cac1f1809048be35, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap1:
+        m_Texture: {fileID: 2800000, guid: 9a27524710bf4414cac1f1809048be35, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaThreshold: 0.5
+    - _BendDistanceOffset: 0.3
+    - _BendFalloff: 2.3
+    - _BendFrenquency: 0.5
+    - _BendFrequency: 0.15
+    - _BendMaskFalloff: 3
+    - _BendMaxRemap: 1
+    - _BendMinRemap: -1
+    - _BezierAlpha: 1
+    - _BezierOffsetAlpha: 1
+    - _ColorMapBlendOffset: 0
+    - _ColorMapFadeContrast: 0
+    - _CrushAngle: 60
+    - _CrushBrightness: 0.5
+    - _CrushFlattenScale: 0
+    - _CrushHeightOffset: -0.9
+    - _DebugDisableWindDPO: 1
+    - _DebugWind: 1
+    - _DistanceHardness: 1
+    - _DistanceOffset: 0
+    - _Falloff: 1.51
+    - _FlattenVertexNormal: 1
+    - _FrequencySpeed: 15
+    - _MaxBendHeight: 2.36
+    - _MaxBendingAngle: 0.17453292
+    - _NormalStrength: 1
+    - _SimpleWindDisplacement: 1
+    - _SimpleWindyYOffset: -0.5
+    - _Smoothness: 0
+    - _TranslucencyDirect: 2.5
+    - _TranslucencyDotViewPower: 85
+    - _TranslucencyShadows: 5
+    - _TreeBendAngle: 0.20943952
+    - _TreeBendDistanceOffset: 0.3
+    - _TreeBendFrenquencyRandomness: 1
+    - _TreeBendFrequency: 0.1
+    - _TreeBendFrequencyOffsetRandomn: 1
+    - _TreeBendFrequencySpeed: 15
+    - _TreeBendMaskDistanceOffset: 0
+    - _TreeBendMaskFalloff: 3
+    - _TreeBendMaxAngle: 0.2617994
+    - _TreeBendMaxMultiplier: 1
+    - _TreeBendMinAngle: 0.034906585
+    - _TreeBendMinMultiplier: -1
+    - _TurbulenceDisplacement: 0.03
+    - _TurbulenceFrequency: 0.1
+    - _TurbulenceSmoothstepMax: 1
+    - _TurbulenceSpeed: 0.2
+    - _UseAirSheenTint: 1
+    - _UseColormap: 1
+    - _UseCrush: 0
+    - _UseTranslucency: 1
+    - _UseTreeBend: -1
+    - _VariantContrast: 1
+    - _VariantOffset: 0
+    - _Wind: 0
+    - _WindBrightness: 0.5
+    m_Colors:
+    - _BaseColor: {r: 0.809, g: 0.6979608, b: 0.5076079, a: 1}
+    - _BezierOffsetP1: {r: 0.3, g: -0.5, b: 0, a: 0}
+    - _BezierOffsetP2: {r: 0.5, g: -0.75, b: 0, a: 0}
+    - _BezierP1: {r: 0, g: 0.1, b: 0, a: 0}
+    - _BezierP2: {r: -0.1, g: 0.5, b: 0, a: 0}
+    - _MainBaseColor: {r: 0.794, g: 0.6850196, b: 0.49819613, a: 1}
+    - _SecondWindSmoothstep: {r: 0, g: 1, b: 0, a: 0}
+    - _VariantBaseColor: {r: 0.7882353, g: 0.8, b: 0.4, a: 0.2}
+  m_BuildTextureStacks: []

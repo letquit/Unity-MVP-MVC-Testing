@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Foliage Vertex Offset
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.2.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19202\nNode;AmplifyShaderEditor.CommentaryNode;504;-2784,1872;Inherit;False;844.9998;373.8972;;5;571;577;505;507;509;Tree
+    Bend;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;467;-1856,1872;Inherit;False;819.1273;318.5093;Debug
+    Only - Stripped in build;5;466;473;484;469;487;;0.3322397,0,0.9528302,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;319;-2374.853,-377.1469;Inherit;False;424.3952;235.515;;3;306;422;421;Wind
+    Data;0,0.5422626,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;68;-3656.201,464;Inherit;False;1720.843;537.3749;;15;589;586;585;584;588;583;582;430;186;575;432;109;65;117;434;Crush;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;67;-3360,1024;Inherit;False;1426.575;812.5817;Simple
+    & Advanced;15;433;406;407;61;437;443;442;441;439;440;438;435;436;508;544;Wind
+    Turbulence;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;173;-3315.578,-551.9383;Inherit;False;909;417.6199;;9;176;174;182;181;179;180;178;177;184;Coord.
+    Mask;1,1,0,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;427;-3319.615,-86.64973;Inherit;False;1398.871;527.5829;;10;431;363;403;28;166;426;425;423;488;499;Main
+    Wind WPO;1,1,1,1;0;0\nNode;AmplifyShaderEditor.StickyNoteNode;431;-2715.998,309.3615;Inherit;False;554.3882;116;Different
+    keywords by function switch;;1,1,1,1;Separate with different keywords to remove
+    the enum option in the GUI when we exclude a function. So that we can feature
+    only one keyword instead of two for reducing shader variants.;0;0\nNode;AmplifyShaderEditor.StickyNoteNode;434;-2592,800;Inherit;False;633.0881;100;Crush
+    before turbulence;;1,1,1,1;Calculate crush before turbulence as we don't want
+    the grass to be completely static when it's windy.;0;0\nNode;AmplifyShaderEditor.FunctionInput;422;-2326.853,-233.1469;Inherit;False;W.
+    Direction;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;403;-3262.214,105.3503;Inherit;False;306;wpo_wind_direction;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;363;-3246.215,169.3504;Inherit;False;184;wpo_CoordMask;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSwitch;117;-2352,608;Inherit;False;Crush;True;1;2;3;In
+    0;In 1;Instance;65;10;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSwitch;65;-2352,512;Inherit;False;Use
+    Crush;True;1;2;3;In 0;In 1;Object;-1;10;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StaticSwitch;425;-2701.215,-6.649778;Inherit;False;Property;_Wind_Simple;Use
+    Wind (Simple);24;0;Create;False;0;0;0;False;0;False;0;1;1;True;_WIND_SIMPLE;Toggle;2;None;Simple;Create;True;False;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StaticSwitch;426;-2718.215,89.35025;Inherit;False;Property;_Wind_Advanced;Use
+    Wind (Advanced);23;0;Create;False;0;0;0;False;0;False;0;1;1;True;_WIND_ADVANCED;Toggle;2;None;Simple;Create;True;False;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StaticSwitch;166;-2718.215,185.3504;Inherit;False;Property;_Wind;Wind;25;0;Create;True;0;0;0;False;0;False;0;2;2;True;;KeywordEnum;3;None;Simple;Advanced;Create;True;True;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionSwitch;177;-2901.578,-391.9381;Inherit;False;Coord
+    Mask;False;2;5;0;Custom;Vertex TexCoord;Vertex Color R;Vertex Color G;Vertex
+    Color B;Object;-1;10;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;474;-1880.192,-404.5622;Inherit;False;719.9999;332;Debug
+    Only - Stripped in build;5;475;486;479;476;497;;0.3322397,0,0.9528302,1;0;0\nNode;AmplifyShaderEditor.FunctionOutput;109;-2165,613;Inherit;False;False;-1;Crush
+    Mask;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.Compare;476;-1579.078,-240.9468;Inherit;False;0;4;0;FLOAT;0;False;1;FLOAT;1;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.StaticSwitch;479;-1428.396,-321.3619;Inherit;False;Property;_DebugDisableWPO1;DebugDisableWPO;8;0;Create;True;0;0;0;False;0;False;0;1;1;True;;Toggle;2;Key0;Key1;Reference;466;True;True;All;9;1;FLOAT;0;False;0;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;486;-1843.765,-161.5119;Inherit;False;debug_disableWPO;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;302;-1138.954,-322.2471;Inherit;False;wpo_wind_mask;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;497;-1872,-320;Inherit;False;wpo_wind_rawMask;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;421;-2096,-320;Inherit;False;W.
+    Mask;1;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;500;-3006.215,153.3503;Inherit;False;Foliage
+    Wind Advanced;3;;889;1568e06c19db377479e78d29eeb46e2b;5,357,0,358,0,443,0,435,2,433,0;3;422;FLOAT;0;False;295;FLOAT3;0,0,1;False;434;FLOAT;1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RangedFloatNode;475;-1833.93,-229.7073;Half;False;Global;DebugDisableWPO;Debug
+    Disable WPO;9;1;[IntRange];Create;True;0;0;0;False;1;HideInInspector;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;432;-2176,512;Inherit;False;out_wpo_crush;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;488;-3242.921,31.51815;Inherit;False;302;wpo_wind_mask;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;306;-2182.853,-233.1469;Inherit;False;wpo_wind_direction;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;423;-2128,48;Inherit;False;out_wpo_windy;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.TexCoordVertexDataNode;174;-3312,-480;Inherit;False;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionInput;176;-3088,-496;Inherit;False;Coord
+    Mask;1;2;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSubtitle;182;-3120,-432;Inherit;False;Mask
+    : TexCoord;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSubtitle;178;-3088,-352;Inherit;False;Coord
+    Mask (R);1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSubtitle;179;-3088,-288;Inherit;False;Coord
+    Mask (G);1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSubtitle;180;-3088,-224;Inherit;False;Coord
+    Mask (B);1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.VertexColorNode;181;-3248,-336;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionSwitch;28;-2464,48;Inherit;False;Use
+    Wind;False;3;4;1;None;Simple;Advanced;Simple OR Advanced;Object;-1;10;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionNode;499;-3006.215,25.35023;Inherit;False;Foliage
+    Wind Simple;0;;3646;f1760a5a110d9ca418673eb06062ae5b;2,33,2,31,0;3;25;FLOAT;0;False;26;FLOAT3;0,0,0;False;32;FLOAT;1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StickyNoteNode;575;-3248,768;Inherit;False;397.5369;136.7855;Static
+    Batching;;1,0,0,1;For static batching compatibility, GrassCrush requires the
+    \"RenderTex UV\" set to \"Vertex Position\".$$Depending on the meshes and intentions,
+    it might be better either in Vertex or Object position.;0;0\nNode;AmplifyShaderEditor.StickyNoteNode;577;-2544,2080;Inherit;False;424.1748;152.007;Static
+    Batching (not supported);;1,0,0,1;Not supported because TreeBend use a logic
+    which rotate its vertices around the pivot point.$$If you want to batch the object,
+    you would prefere disabling this feature and use Wind Simple / Advanced and mask
+    the displacement with vertex color.;0;0\nNode;AmplifyShaderEditor.GetLocalVarNode;430;-2864,512;Inherit;False;423;out_wpo_windy;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.ComponentMaskNode;588;-2864,672;Inherit;False;True;False;True;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.ObjectToWorldTransfNode;584;-3440,672;Inherit;False;1;0;FLOAT4;0,0,0,1;False;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.PosVertexDataNode;585;-3632,832;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.TransformPositionNode;586;-3472,832;Inherit;False;Object;World;False;Fast;True;1;0;FLOAT3;0,0,0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.StickyNoteNode;589;-3315.997,503.811;Inherit;False;439.5776;157.5924;RenderTex
+    UV;;1,1,1,1;Object Position : Can be used for any type of foliages. Highly recommanded
+    for \"high\" foliages like PampaGrass.$$Vertex Position : It has the advantage
+    of being compatible with static batching. Work mostly with little foliages and
+    grass and flowers.;0;0\nNode;AmplifyShaderEditor.StaticSwitch;441;-2768,1696;Inherit;False;Property;_Wind2;Wind;10;0;Create;True;0;0;0;False;0;False;0;2;2;True;;KeywordEnum;3;None;Simple;Advanced;Reference;166;True;True;All;9;1;FLOAT;0;False;0;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.StaticSwitch;443;-2768,1600;Inherit;False;Property;_Wind_Advanced2;Wind;10;0;Create;False;0;0;0;False;0;False;0;1;1;True;_WIND_ADVANCED;Toggle;2;None;Simple;Reference;426;True;False;All;9;1;FLOAT;0;False;0;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;61;-2160,1552;Inherit;False;False;-1;Turbulence
+    Mask;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;407;-3344,1536;Inherit;False;306;wpo_wind_direction;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionSwitch;435;-2512,1152;Inherit;False;Use
+    Wind;False;3;4;1;None;Simple;Advanced;Simple OR Advanced;Instance;28;10;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StaticSwitch;438;-2768,1344;Inherit;False;Property;_Wind1;Wind;10;0;Create;True;0;0;0;False;0;False;0;2;2;True;;KeywordEnum;3;None;Simple;Advanced;Reference;166;True;True;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StaticSwitch;439;-2768,1248;Inherit;False;Property;_Wind_Advanced1;Wind;10;0;Create;False;0;0;0;False;0;False;0;1;1;True;_WIND_ADVANCED;Toggle;2;None;Simple;Reference;426;True;False;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StaticSwitch;442;-2752,1504;Inherit;False;Property;_Wind_Simple2;Wind;10;0;Create;False;0;0;0;False;0;False;0;1;1;True;_WIND_SIMPLE;Toggle;2;None;Simple;Reference;425;True;False;All;9;1;FLOAT;0;False;0;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.StaticSwitch;440;-2752,1152;Inherit;False;Property;_Wind_Simple1;Wind;10;0;Create;False;0;0;0;False;0;False;0;1;1;True;_WIND_SIMPLE;Toggle;2;None;Simple;Reference;425;True;False;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.Compare;469;-1552,2016;Inherit;False;0;4;0;FLOAT;0;False;1;FLOAT;1;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WireNode;484;-1840,2112;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;473;-1776,2048;Inherit;False;432;out_wpo_crush;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StaticSwitch;466;-1328,1920;Inherit;False;Property;_DebugDisableWindDPO;DebugDisableWindDPO;22;0;Create;True;0;0;0;False;1;HideInInspector;False;1;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;406;-3344,1472;Inherit;False;497;wpo_wind_rawMask;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;433;-3312,1408;Inherit;False;432;out_wpo_crush;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;487;-1808,1984;Inherit;False;486;debug_disableWPO;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;508;-2192,1152;Inherit;False;wpo_out_turbulence;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-1008,1920;Inherit;False;True;-1;XYZ;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionSwitch;437;-2512,1552;Inherit;False;Use
+    Wind;False;3;4;1;None;Simple;Advanced;Simple OR Advanced;Instance;28;10;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;509;-2736,1920;Inherit;False;508;wpo_out_turbulence;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;436;-2752,1072;Inherit;False;432;out_wpo_crush;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionSwitch;507;-2160,1920;Inherit;False;Is
+    Tree;True;0;2;2;No;Trunk;Object;-1;10;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionNode;544;-3104,1440;Inherit;False;Wind
+    Turbulence;26;;3647;d29d8273ec0a41741b89c1027490b15f;3,89,0,138,0,139,0;4;150;FLOAT3;0,0,0;False;108;FLOAT;1;False;88;FLOAT3;0.7,0,0.7;False;134;FLOAT;1;False;2;FLOAT3;0;FLOAT;85\nNode;AmplifyShaderEditor.GetLocalVarNode;505;-2736,2000;Inherit;False;306;wpo_wind_direction;1;0;OBJECT;;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.GetLocalVarNode;186;-2864,592;Inherit;False;184;wpo_CoordMask;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;184;-2613.578,-391.9381;Inherit;False;wpo_CoordMask;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;582;-2640,576;Inherit;False;Grass
+    Crush;32;;3654;72a11dc2de694404ba92da11ead300ad;3,79,2,77,0,239,2;3;159;FLOAT3;0,0,0;False;78;FLOAT;1;False;242;FLOAT2;0,0;False;2;FLOAT3;31;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSwitch;583;-3248,672;Inherit;False;Crush
+    RT UV;False;0;2;4;Object Position;Vertex Position Relative to World;Object;-1;10;0;FLOAT4;0,0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT2;0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;9;FLOAT;0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionNode;590;-2496,1984;Inherit;False;Tree
+    Bend;10;;1;e4e4e82b7331fd74d93e4274915cc742;0;2;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;2;FLOAT3;0;FLOAT;18\nWireConnection;117;1;582;0\nWireConnection;65;0;430;0\nWireConnection;65;1;582;31\nWireConnection;425;0;499;0\nWireConnection;426;0;500;0\nWireConnection;166;0;499;0\nWireConnection;166;2;500;0\nWireConnection;177;0;176;0\nWireConnection;177;1;182;0\nWireConnection;177;2;178;0\nWireConnection;177;3;179;0\nWireConnection;177;4;180;0\nWireConnection;109;0;117;0\nWireConnection;476;0;486;0\nWireConnection;476;3;497;0\nWireConnection;479;1;497;0\nWireConnection;479;0;476;0\nWireConnection;486;0;475;0\nWireConnection;302;0;479;0\nWireConnection;497;0;421;0\nWireConnection;500;422;488;0\nWireConnection;500;295;403;0\nWireConnection;500;434;363;0\nWireConnection;432;0;65;0\nWireConnection;306;0;422;0\nWireConnection;423;0;28;0\nWireConnection;182;0;174;2\nWireConnection;178;0;181;1\nWireConnection;179;0;181;2\nWireConnection;180;0;181;3\nWireConnection;28;1;425;0\nWireConnection;28;2;426;0\nWireConnection;28;3;166;0\nWireConnection;499;25;488;0\nWireConnection;499;26;403;0\nWireConnection;499;32;363;0\nWireConnection;588;0;583;0\nWireConnection;586;0;585;0\nWireConnection;441;0;544;85\nWireConnection;441;2;544;85\nWireConnection;443;0;544;85\nWireConnection;61;0;437;0\nWireConnection;435;0;436;0\nWireConnection;435;1;440;0\nWireConnection;435;2;439;0\nWireConnection;435;3;438;0\nWireConnection;438;0;544;0\nWireConnection;438;2;544;0\nWireConnection;439;0;544;0\nWireConnection;442;0;544;85\nWireConnection;440;0;544;0\nWireConnection;469;0;487;0\nWireConnection;469;2;473;0\nWireConnection;469;3;484;0\nWireConnection;484;0;507;0\nWireConnection;466;1;507;0\nWireConnection;466;0;469;0\nWireConnection;508;0;435;0\nWireConnection;0;0;466;0\nWireConnection;437;1;442;0\nWireConnection;437;2;443;0\nWireConnection;437;3;441;0\nWireConnection;507;0;509;0\nWireConnection;507;1;590;0\nWireConnection;544;150;433;0\nWireConnection;544;108;406;0\nWireConnection;544;88;407;0\nWireConnection;184;0;177;0\nWireConnection;582;159;430;0\nWireConnection;582;78;186;0\nWireConnection;582;242;588;0\nWireConnection;583;0;584;0\nWireConnection;583;1;586;0\nWireConnection;590;13;509;0\nWireConnection;590;11;505;0\nASEEND*/\n//CHKSM=C84868938957591B6A53E21E8C9634EF99FB44DE"
+  m_functionName: 
+  m_description: 'Generic node for foliage Vertex Offset.
+
+    ------------
+
+    -Use
+    Crush: Add the crush keyword/feature.
+
+
+    -Use Wind: Choose which keywords/features
+    are available for this shader.
+
+
+    -Is Tree: Enable it if used for leaves/tree
+    bending. The bending works form a relative mask calculated from the pivot point.
+
+
+    -Coord
+    Mask: define the displacement mask.'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 1
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 0.015686275, g: 0.39215687, b: 0, a: 1}
+  m_customNodeCategory: Eole
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

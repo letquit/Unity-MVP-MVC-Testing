@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &656214607565204618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 592362474861447299}
+  - component: {fileID: 6261617680881251472}
+  - component: {fileID: 8472863788604089045}
+  - component: {fileID: 7833452811487647635}
+  - component: {fileID: 8721541160881288260}
+  m_Layer: 0
+  m_Name: EoleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &592362474861447299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656214607565204618}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.18143749, y: 0.9484457, z: -3.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6261617680881251472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656214607565204618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615e4342c3bca34488e70f82eb3acc0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windZone: {fileID: 0}
+  windSource: 0
+  windStrengthMultiplier: 1
+  windSpeedMultiplier: 1
+  amplitude: 1
+  speed: 1
+--- !u!114 &8472863788604089045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656214607565204618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8e7944f5fb56e4c9447e2aeefe6013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windManager: {fileID: 6261617680881251472}
+  windZone: {fileID: 0}
+  windMap: {fileID: 2800000, guid: 3bed04634c99a2d40b0d6371b659fa83, type: 3}
+  windMapSize: 35
+  windSmoothstep: {x: -0.7, y: 1.3}
+  airStrength: 0.25
+  airMap: {fileID: 2800000, guid: 9a27524710bf4414cac1f1809048be35, type: 3}
+  airTillingSize: {x: 5, y: 20}
+  airSmoothstep: {x: 0.2, y: 1}
+  airSpeedMultiplier: 3.5
+  refractionMap: {fileID: 2800000, guid: 9c898e951274205449032e976c045943, type: 3}
+  refractionTillingSize: 30
+  refractionStrength: 0.22
+--- !u!114 &7833452811487647635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656214607565204618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4f167f5fbf8394ab3c55caf8d619c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorMapMode: 1
+  terrain: {fileID: 0}
+  layerIndex: 0
+  colorMap: {fileID: 2800000, guid: 6d4a663fe55561946880c64f8a78a3c9, type: 3}
+  size: {x: 25, y: 25}
+  offset: {x: 250, y: 250}
+--- !u!114 &8721541160881288260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656214607565204618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 495f53ce5b06d774fa06f8308eaa238a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crushLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  crushCamera: {fileID: 0}
+  crushRenderTexture: {fileID: 8400000, guid: d6d970a998063144aba4c205990882e8, type: 2}
+  updateBufferPosition: 1
+  distanceViewThreshold: 20
+  distanceViewFalloff: 5

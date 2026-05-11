@@ -1,0 +1,102 @@
+CHANGELOG
+
+_____
+2.0.1
+Patch
+
+Fixed:
+• VFXCalculateVelocity script return an error in build.
+• Missing wind turbulence in some shaders.
+• Visual Effect particles don't appears with VectorField shader (crusher). This shader now has a keyword to use it on Particle System only.
+
+_____
+2.0.0
+New ressources and patch
+
+Added:
+• A new "Quick Start" scene as example including a few technical tips.
+• BIRP (Built-In) support: foliage shaders, including examples specificaly for this pipeline.
+• [Shader] New ASE node "TreeBend".
+• [Shader] Additional switch function in 'Vertex Foliage Offset' node (switch the 'Crush RT UV') and add a few sticky note tips.
+• [Tool] Add "TreeBendEditor" tool for improved workflow with the TreeBend feature.
+• [Foliage] add a new tree mesh/prefab (cypress).
+• [UX] Add custom inspector for UX improvement with the additional Eole class (Crusher, and other class which have some controls on VFX/Particle System).
+
+Changed:
+• Nomenclature and directories have entirely changed to include the BIRP compatibility.
+• [UX] ShaderGUI (material drawer) for UX improvement and include the new "TreeBend" feature.
+• [Optimization] In "Foliage Color & Shading" node, the color variation mode "Height Position" and "Local Height Position" use Vertex Position instead off Pixel.
+• [FX] VFX_FallLeaves (Visual Effect) example prefab has been replaced by FX_FallLeaves (Particle System) for a larger pipeline compatibility.
+• [FX] VFX_RandomShockwaves (Visual Effect) example prefab has been replace by FX_RandomShockwaves for a larger pipeline compatibility.
+• [URP Shader] Sea example only: fix refraction normals and reduce number of texture sample in gold ray shader.
+• [Shader] Wind System now use 'Vertex Position' by default instead of 'Object Position' for each foliages.
+• Prefabs are now instantiable from the tab 'GameObject/3D Object/Eole' (old path was GameObject/Eole).
+
+Fixed:
+• Color variation mode "Local Height Position" have a different mask when the object is rescaled.
+• Sea example: Under Water Surface refaction don't use a nomal texture.
+• Orientation of CrushCamera prefab is not correct when a new one is created.
+• Shortcut Shift+S don't mark the crush manager inherited object when the CrushCamera is automatically set.
+
+_____
+1.2.0
+New ressources and patch
+
+Added:
+• New examples with seaweeds under the water.
+
+Changed:
+• Arrange files and folders directory.
+• Optimize the source textures (PSD are also replaced by PNG).
+• Shader optimization (set most of the properties precision to half).
+• All shaders examples can now cast shadows (enable/disable the shadow casting from the mesh renderer).
+
+Fixed:
+• Error in develoment build, missing a shader/'crush render texture'.
+
+_____
+1.1.2
+Patch
+
+Changed:
+• EditorUtils: Remove the unused function FindObjectsWithSubstring
+
+Fixed:
+• Debug view: Turbulence mask is not visible when wind displacement is disabled.
+• Missing "crush camera" reference while entering or exiting Play mode.
+• Custom inspectors doesn't mark some references as dirty in some cases, including prefab instance.
+• "Undo" action in the custom inspectors: do not work with texture references, and does not apply global properties after an "undo".
+• MainCamera settings are overriden when it is set as "crush camera".
+• When the MainCamera is set as "crush camera", the CameraCrushRenderTexture is instantiated even when already existing in the scene.
+
+_____
+1.1.1
+Patch
+
+Added:
+• DOTS Instancing support.
+
+Changed:
+• Shaders model set to 4.5 (required for DOTS Instancing support).
+• Changed script name EditorUtility to EditorUtils, to avoid confusion with Unity library.
+
+Fixed:
+• Shader variant stripping causing displacement issue in build.
+
+_____
+1.1.0
+Minor patch and UX improvement
+
+Added:
+• Undo/redo support.
+• A user action is now required with an editor popup window to confirm if a new CrushCamera should be instantiated when the reference is not valid.
+• Foliage shaders (global shader properties) are now automatically initialized after Unity starts.
+
+Changed:
+• Rename VFXSetWindData to VFXSetWindProperties and improve the component flexibility.
+• Rename the Eole toolbar script namespace.
+• Delete GlobalShaderFoliageManager and its custom inspector script, as they were not used.
+
+Fixed:
+• Error "Assertion failed on expression: 'ShouldRunBehaviour()" while using the Eole refresh shortcut is now fixed.
+• The prefab components don't execute anymore from the project folder / prefab mode, until the gameObject is in a valid scene, which could return some warnings.
